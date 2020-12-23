@@ -1,0 +1,146 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 20px;
+  font-family: "Courier New";
+}
+.wxxvhs {
+  text-transform: uppercase;
+  position: relative;
+  mix-blend-mode: screen;
+  color: transparent;
+  text-shadow: 0 0 0.125rem #0f0;
+  animation: jitter 5s infinite;
+}
+.wxxvhs::before,
+.wxxvhs::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  mix-blend-mode: screen;
+  animation: glitch 5s infinite alternate;
+}
+.wxxvhs::before {
+  text-shadow: 0 0 0.16rem #f00;
+}
+.wxxvhs::after {
+  text-shadow: 0 0 0.2rem #00f;
+  animation-delay: 50s;
+}
+@-moz-keyframes glitch {
+  0% {
+    transform: rotate(0deg) translate(0.11rem) rotate(0deg);
+  }
+  100% {
+    transform: rotate(400deg) translate(0.11rem) rotate(-398deg);
+  }
+}
+@-webkit-keyframes glitch {
+  0% {
+    transform: rotate(0deg) translate(0.11rem) rotate(0deg);
+  }
+  100% {
+    transform: rotate(400deg) translate(0.11rem) rotate(-398deg);
+  }
+}
+@-o-keyframes glitch {
+  0% {
+    transform: rotate(0deg) translate(0.11rem) rotate(0deg);
+  }
+  100% {
+    transform: rotate(400deg) translate(0.11rem) rotate(-398deg);
+  }
+}
+@keyframes glitch {
+  0% {
+    transform: rotate(0deg) translate(0.11rem) rotate(0deg);
+  }
+  100% {
+    transform: rotate(400deg) translate(0.11rem) rotate(-398deg);
+  }
+}
+@-moz-keyframes jitter {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  50.1% {
+    transform: translateX(0.1em) skew(40deg);
+  }
+  50.5% {
+    transform: translateX(-0.2em) skew(-90deg);
+  }
+  52% {
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes jitter {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  50.1% {
+    transform: translateX(0.1em) skew(40deg);
+  }
+  50.5% {
+    transform: translateX(-0.2em) skew(-90deg);
+  }
+  52% {
+    transform: translateX(0);
+  }
+}
+@-o-keyframes jitter {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  50.1% {
+    transform: translateX(0.1em) skew(40deg);
+  }
+  50.5% {
+    transform: translateX(-0.2em) skew(-90deg);
+  }
+  52% {
+    transform: translateX(0);
+  }
+}
+@keyframes jitter {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  50.1% {
+    transform: translateX(0.1em) skew(40deg);
+  }
+  50.5% {
+    transform: translateX(-0.2em) skew(-90deg);
+  }
+  52% {
+    transform: translateX(0);
+  }
+}
